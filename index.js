@@ -8,9 +8,7 @@ const port = 8080;
 app.use(cors());
 
 const SALLA_PRODUCTS_URL = "https://api.salla.dev/admin/v2/products";
-const SALLA_ACCESS_TOKEN =
-  process.env.SALLA_ACCESS_TOKEN ||
-  "ory_at_6i-dV196XOFiIKAUQHFzwq-OQIMAkBdJNOwhaPGX1wU.9Sn6zGiP91d_OoBNJaCFcRLS2DXP9RiBcuMUfAxcvJ0";
+const SALLA_ACCESS_TOKEN = process.env.SALLA_ACCESS_TOKEN;
 
 // Shape info for consumers that expect field metadata
 const PRODUCT_FIELDS = [
